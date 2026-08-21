@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Laptop Categories</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f5f7fa;
+        }
+
+        header {
+            background: #111827;
+            color: white;
+            padding: 18px 7%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+        }
+
+        .page-title {
+            text-align: center;
+            padding: 60px 20px 30px;
+        }
+
+        .page-title h1 {
+            font-size: 40px;
+            margin-bottom: 12px;
+        }
+
+        .page-title p {
+            color: #555;
+            font-size: 18px;
+        }
+
+        .category-container {
+            padding: 30px 7% 70px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .category-card {
+            background: white;
+            padding: 40px 25px;
+            text-align: center;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            transition: 0.3s;
+        }
+
+        .category-card:hover {
+            transform: translateY(-8px);
+        }
+
+        .icon {
+            font-size: 70px;
+            margin-bottom: 20px;
+        }
+
+        .category-card h2 {
+            margin-bottom: 12px;
+        }
+
+        .category-card p {
+            color: #666;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #2563eb;
+            color: white;
+            text-decoration: none;
+            padding: 12px 25px;
+            border-radius: 7px;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background: #1d4ed8;
+        }
+
+        footer {
+            background: #111827;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        @media (max-width: 800px) {
+            .category-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 550px) {
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav a {
+                margin: 0 7px;
+            }
+
+            .category-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">💻 Laptop Store</div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="categories.html">Categories</a>
+        <a href="#">Laptops</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<section class="page-title">
+    <h1>Laptop Categories</h1>
+    <p>तुमच्या गरजेनुसार योग्य laptop निवडा</p>
+</section>
+
+<section class="category-container">
+
+    <div class="category-card">
+        <div class="icon">🎮</div>
+        <h2>Gaming Laptops</h2>
+        <p>
+            High-performance processor, powerful graphics
+            आणि gaming साठी योग्य laptops.
+        </p>
+        <a href="#" class="btn">View Laptops</a>
+    </div>
+
+    <div class="category-card">
+        <div class="icon">💼</div>
+        <h2>Business Laptops</h2>
+        <p>
+            Office, business आणि professional कामासाठी
+            reliable laptops.
+        </p>
+        <a href="#" class="btn">View Laptops</a>
+    </div>
+
+    <div class="category-card">
+        <div class="icon">🎓</div>
+        <h2>Student Laptops</h2>
+        <p>
+            Online classes, coding, study आणि daily use
+            साठी budget-friendly laptops.
+        </p>
+        <a href="#" class="btn">View Laptops</a>
+    </div>
+
+    <div class="category-card">
+        <div class="icon">🍎</div>
+        <h2>MacBooks</h2>
+        <p>
+            Apple MacBook Air आणि MacBook Pro models.
+        </p>
+        <a href="#" class="btn">View MacBooks</a>
+    </div>
+
+    <div class="category-card">
+        <div class="icon">🏢</div>
+        <h2>Office Laptops</h2>
+        <p>
+            रोजच्या office work आणि productivity साठी
+            laptops.
+        </p>
+        <a href="#" class="btn">View Laptops</a>
+    </div>
+
+    <div class="category-card">
+        <div class="icon">💰</div>
+        <h2>Budget Laptops</h2>
+        <p>
+            कमी बजेटमध्ये चांगल्या specifications असलेले
+            laptops.
+        </p>
+        <a href="#" class="btn">View Laptops</a>
+    </div>
+
+</section>
+
+<footer>
+    <p>© 2026 Laptop Store. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
