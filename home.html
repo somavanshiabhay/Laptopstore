@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laptop Store - Home</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f5f7fa;
+            color: #222;
+        }
+
+        /* Navbar */
+        header {
+            background: #111827;
+            color: white;
+            padding: 18px 7%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+        /* Hero */
+        .hero {
+            min-height: 500px;
+            padding: 80px 7%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: linear-gradient(120deg, #dbeafe, #f8fafc);
+        }
+
+        .hero-text {
+            max-width: 550px;
+        }
+
+        .hero h1 {
+            font-size: 50px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 19px;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 14px 28px;
+            background: #2563eb;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background: #1d4ed8;
+        }
+
+        .hero-image {
+            font-size: 180px;
+        }
+
+        /* Categories */
+        .section {
+            padding: 60px 7%;
+        }
+
+        .section h2 {
+            text-align: center;
+            font-size: 32px;
+            margin-bottom: 35px;
+        }
+
+        .categories {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .category {
+            background: white;
+            padding: 35px 20px;
+            text-align: center;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            transition: 0.3s;
+        }
+
+        .category:hover {
+            transform: translateY(-7px);
+        }
+
+        .category-icon {
+            font-size: 55px;
+            margin-bottom: 15px;
+        }
+
+        .category h3 {
+            margin-bottom: 10px;
+        }
+
+        /* Products */
+        .products {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .product {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            padding-bottom: 20px;
+        }
+
+        .product-img {
+            height: 180px;
+            background: #e5e7eb;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 90px;
+        }
+
+        .product-info {
+            padding: 18px;
+        }
+
+        .product-info h3 {
+            margin-bottom: 10px;
+        }
+
+        .price {
+            font-size: 21px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        /* Footer */
+        footer {
+            background: #111827;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            margin-top: 30px;
+        }
+
+        /* Mobile */
+        @media (max-width: 900px) {
+            .categories,
+            .products {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .hero {
+                text-align: center;
+                flex-direction: column;
+            }
+
+            .hero h1 {
+                font-size: 38px;
+            }
+
+            .hero-image {
+                font-size: 100px;
+                margin-top: 30px;
+            }
+        }
+
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav a {
+                margin: 0 7px;
+            }
+
+            .categories,
+            .products {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">💻 Laptop Store</div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="categories.html">Categories</a>
+        <a href="#">Laptops</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-text">
+        <h1>Find Your Perfect Laptop</h1>
+
+        <p>
+            नवीनतम आणि परवडणारे laptops एकाच ठिकाणी.
+            Gaming, Business, Student आणि Professional laptops उपलब्ध.
+        </p>
+
+        <a href="categories.html" class="btn">
+            Shop Now →
+        </a>
+    </div>
+
+    <div class="hero-image">💻</div>
+</section>
+
+<section class="section">
+    <h2>Shop By Category</h2>
+
+    <div class="categories">
+
+        <div class="category">
+            <div class="category-icon">🎮</div>
+            <h3>Gaming Laptops</h3>
+            <p>Powerful gaming laptops</p>
+        </div>
+
+        <div class="category">
+            <div class="category-icon">💼</div>
+            <h3>Business Laptops</h3>
+            <p>Work आणि office साठी</p>
+        </div>
+
+        <div class="category">
+            <div class="category-icon">🎓</div>
+            <h3>Student Laptops</h3>
+            <p>Students साठी budget laptops</p>
+        </div>
+
+        <div class="category">
+            <div class="category-icon">🍎</div>
+            <h3>MacBooks</h3>
+            <p>Apple MacBook collection</p>
+        </div>
+
+    </div>
+</section>
+
+<section class="section">
+    <h2>Featured Laptops</h2>
+
+    <div class="products">
+
+        <div class="product">
+            <div class="product-img">💻</div>
+            <div class="product-info">
+                <h3>MacBook Air</h3>
+                <p>16GB RAM • 512GB SSD</p>
+                <div class="price">₹55,000</div>
+                <a href="#" class="btn">View Product</a>
+            </div>
+        </div>
+
+        <div class="product">
+            <div class="product-img">💻</div>
+            <div class="product-info">
+                <h3>HP Laptop</h3>
+                <p>16GB RAM • 512GB SSD</p>
+                <div class="price">₹49,999</div>
+                <a href="#" class="btn">View Product</a>
+            </div>
+        </div>
+
+        <div class="product">
+            <div class="product-img">💻</div>
+            <div class="product-info">
+                <h3>Dell Inspiron</h3>
+                <p>16GB RAM • 512GB SSD</p>
+                <div class="price">₹52,999</div>
+                <a href="#" class="btn">View Product</a>
+            </div>
+        </div>
+
+        <div class="product">
+            <div class="product-img">💻</div>
+            <div class="product-info">
+                <h3>Gaming Laptop</h3>
+                <p>16GB RAM • 1TB SSD</p>
+                <div class="price">₹69,999</div>
+                <a href="#" class="btn">View Product</a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Laptop Store. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
